@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stacy's Handmade Soap</title>
+
+    <!-- Bootstrap styles first -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Our styles -->
+    <link rel="stylesheet" href="checkboxes.css">
+</head>
+<body>
+    <!-- main bootstrap container holds everything on the page -->
+    <div class="container w-50">
+        <div class="row">
+            <div class="col">
+                <h1>Order Handmade Soaps</h1>
+            </div>
+        </div>
+
+        <form>
+            <fieldset>
+                <legend>Choose Scents</legend>
+
+                <div class="form-check">
+                    <input type="checkbox" name="soap" id="soap-lav"
+                           data-price="5.99" value="Lavender" class="form-check-input">
+                    <label class="form-check-label" for="soap-lav">Lavender $5.99</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" name="soap" id="soap-cit"
+                           data-price="4.99" value="Citrus" class="form-check-input">
+                    <label class="form-check-label" for="soap-cit">Citrus $4.99</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="checkbox" name="soap" id="soap-spr"
+                           data-price="3.49" value="Spring Rain" class="form-check-input">
+                    <label class="form-check-label" for="soap-spr">Spring Rain $3.49</label>
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Shipping Options</legend>
+
+                <div class="form-check">
+                    <input type="radio" name="shipping" id="shipping-fc"
+                           data-shipping-fee="12" value="first class"
+                           class="form-check-input" checked="checked">
+                    <label class="form-check-label" for="shipping-fc">First Class $12</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" name="shipping" id="shipping-2d"
+                           data-shipping-fee="25" value="two day"
+                           class="form-check-input">
+                    <label class="form-check-label" for="shipping-2d">Two Day $25</label>
+                </div>
+
+                <div class="form-check">
+                    <input type="radio" name="shipping" id="shipping-ov"
+                           data-shipping-fee="49" value="overnight"
+                           class="form-check-input">
+                    <label class="form-check-label" for="shipping-ov">Overnight $49</label>
+                </div>
+            </fieldset>
+
+            <!-- <button> has two classes: "btn" and "btn-primary" -->
+            <button class="btn btn-primary">Order <span id="quantity"></span> Soaps Now!</button>
+        </form>
+
+
+       <table class="output table">
+           <tr>
+               <td>Soaps</td>
+               <td id="itemsOutput"></td>
+           </tr>
+           <tr>
+               <td>Subtotal</td>
+               <td id="subtotalOutput"></td>
+           </tr>
+           <tr>
+               <td>Shipping</td>
+               <td id="shippingOutput"></td>
+           </tr>
+           <tr>
+               <td>Order Total</td>
+               <td id="orderTotalOutput"></td>
+           </tr>
+       </table>
+
+    </div>
+    <!-- jQuery first -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <!-- Popper and Bootstrap second -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Our code last -->
+    <script src="checkboxes.js"></script>
+
+</body>
+</html>

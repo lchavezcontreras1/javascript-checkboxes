@@ -1,0 +1,16 @@
+fieldset {
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+legend {
+    color: mediumblue;
+}
+
+.output {
+    margin-top: 25px;
+}
+
+.output tr:last-child {
+   font-weight: bold;
+}
