@@ -17,7 +17,7 @@ $(document).ready(
         function placeOrder(event) {
             // Don't actually submit the form!
             // Stops the flashing/resetting
-            // event.preventDefault();
+            event.preventDefault();
 
             // jQuery, get me every <input> where the name is "soap"
             // that are checked
